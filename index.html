@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notepad</title>
+  <style>
+    body {
+      text-align: center;
+      overflow-x: hidden;
+      background-color: azure;
+    }
+
+    button {
+      padding: 5px 20px;
+      background-color: blue;
+      color: white;
+      border: none;
+      font-size: 25px;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 10px;
+      transition: 0.2s all linear;
+    }
+
+    button:hover {
+      background-color: lightblue;
+      cursor: pointer;
+      color: black;
+    }
+
+    textarea {
+      border: 1px solid red;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 15px;
+    }
+
+    h1 {
+      font-family: fantasy;
+    }
+
+    button:active {
+      transform: translateY(2px);
+      box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Notepad</h1>
+    <textarea id="input" cols="50" rows="12"></textarea>
+    <div class="btn-cont">
+      <button id="save">Save</button>
+      <button id="clear">Clear</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
